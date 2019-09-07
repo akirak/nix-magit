@@ -4,6 +4,7 @@ let
   emacsWithPackages = (pkgs.emacsPackagesNgGen emacs).emacsWithPackages;
   emacsWithMagit = emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [
     magit
+    ivy
     color-theme-sanityinc-tomorrow
   ]));
 in
