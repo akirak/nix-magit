@@ -1,0 +1,25 @@
+* Running Magit inside Nix-Shell
+This is a [[https://nixos.org/nix/][Nix]] expression that runs Emacs with the famous Magit packages.
+It is inspired by [[https://github.com/vlandeiro/magit-docker][magit-docker]] (or [[https://www.reddit.com/r/emacs/comments/d0qnbf/dockerized_magit/][Dockerized Magit]]) but uses Nix instead of Docker.
+** Prerequisites
+Since this program requires Nix, your operating system must support Nix.
+At present, Linux and Mac are supported, but Windows is not.
+However, you can install Nix on Windows Subsystem for Linux (WSL).
+** Installation
+Install Nix package manager, if you haven't already:
+
+#+begin_src shell
+curl https://nixos.org/nix/install | sh
+#+end_src
+
+For details, see [[https://nixos.org/nix/manual/#chap-installation][the Nix manual]].
+** Usage
+Inside a Git repository, run the following command:
+
+#+begin_src shell
+nix-shell https://github.com/akirak/nix-magit/archive/master.tar.gz
+#+end_src
+
+Then Emacs starts and Magit displays the status of your Git repository.
+** License
+MIT License
