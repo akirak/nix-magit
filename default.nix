@@ -4,6 +4,8 @@ let
   emacsWithPackages = (pkgs.emacsPackagesNgGen emacs).emacsWithPackages;
   emacsWithMagit = emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [
     magit
+    evil
+    evil-magit
     color-theme-sanityinc-tomorrow
   ]));
 in
