@@ -21,5 +21,11 @@ nix-shell https://github.com/akirak/nix-magit/archive/master.tar.gz
 #+end_src
 
 Then Emacs starts and Magit displays the status of your Git repository.
+
+It would be a good idea to define an alias for the command:
+
+#+begin_src shell
+alias magit='nix-shell https://github.com/akirak/nix-magit/archive/master.tar.gz'
+#+end_src
 ** License
 MIT License
