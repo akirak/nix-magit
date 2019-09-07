@@ -1,6 +1,8 @@
 * Running Magit inside Nix-Shell
 This is a [[https://nixos.org/nix/][Nix]] expression that runs Emacs with the famous Magit packages.
 It is inspired by [[https://github.com/vlandeiro/magit-docker][magit-docker]] (or [[https://www.reddit.com/r/emacs/comments/d0qnbf/dockerized_magit/][Dockerized Magit]]) but uses Nix instead of Docker.
+
+This =evil= branch provides Emacs in =evil-mode=, which means it supports vi-like keybindings.
 ** Prerequisites
 Since this program requires Nix, your operating system must support Nix.
 At present, Linux and Mac are supported, but Windows is not.
@@ -17,7 +19,7 @@ For details, see [[https://nixos.org/nix/manual/#chap-installation][the Nix manu
 Inside a Git repository, run the following command:
 
 #+begin_src shell
-nix-shell https://github.com/akirak/nix-magit/archive/master.tar.gz
+nix-shell https://github.com/akirak/nix-magit/archive/evil.tar.gz
 #+end_src
 
 Then Emacs starts and Magit displays the status of your Git repository.
@@ -25,7 +27,7 @@ Then Emacs starts and Magit displays the status of your Git repository.
 It would be a good idea to define an alias for the command:
 
 #+begin_src shell
-alias magit='nix-shell https://github.com/akirak/nix-magit/archive/master.tar.gz'
+alias magit='nix-shell https://github.com/akirak/nix-magit/archive/evil.tar.gz'
 #+end_src
 ** License
 MIT License
