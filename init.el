@@ -7,6 +7,9 @@
 (require 'color-theme-sanityinc-tomorrow)
 (load-theme 'sanityinc-tomorrow-night t)
 
+;; Disable all local variables
+(setq enable-local-variables nil)
+
 ;; Start magit-status
 (setq magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1)
 (magit-status)
