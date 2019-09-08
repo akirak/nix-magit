@@ -1,5 +1,5 @@
 * Running Magit inside Nix-Shell
-This is a [[https://nixos.org/nix/][Nix]] expression that runs Emacs with the famous Magit packages.
+This is a [[https://nixos.org/nix/][Nix]] expression that runs Emacs with [[https://magit.vc/][Magit]], a Git porcelain inside Emacs.
 It is inspired by [[https://github.com/vlandeiro/magit-docker][magit-docker]] (or [[https://www.reddit.com/r/emacs/comments/d0qnbf/dockerized_magit/][Dockerized Magit]]) but uses Nix instead of Docker.
 
 This =evil= branch provides Emacs in =evil-mode=, which means it supports vi-like keybindings.

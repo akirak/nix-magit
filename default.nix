@@ -12,6 +12,9 @@ in
 pkgs.mkShell {
   buildInputs = [emacsWithMagit pkgs.git];
   shellHook = ''
+if ! git rev-parse --quiet --show-toplevel; then
+  exit 1
+fi
 emacs -nw -Q -l ${./init.el}
 exit
   '';
