@@ -25,6 +25,12 @@ If you haven't enabled flakes, you can temporarily enable the feature:
       --extra-experimental-features flakes
 #+end_src
 
+There is also an evil version (i.e. vi keybindings):
+
+#+begin_src bash
+  nix run github:akirak/nix-magit#evil --no-write-lock-file
+#+end_src
+
 You could define an alias for the command:
 
 #+begin_src shell
