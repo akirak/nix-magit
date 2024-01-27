@@ -1,0 +1,5 @@
+(setq evil-want-keybinding nil)
+(require 'evil)
+(evil-mode 1)
+(require 'evil-collection)
+(evil-collection-init)
