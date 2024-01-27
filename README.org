@@ -1,5 +1,5 @@
 * Running Magit as a Nix App
-This is a [[https://nixos.org/nix/][Nix]] expression that runs Emacs with [[https://magit.vc/][Magit]], a Git porcelain inside Emacs.
+This is a Nix flake runs Emacs with [[https://magit.vc/][Magit]], a Git porcelain inside Emacs.
 It is inspired by [[https://github.com/vlandeiro/magit-docker][magit-docker]] (or [[https://www.reddit.com/r/emacs/comments/d0qnbf/dockerized_magit/][Dockerized Magit]]) but uses Nix instead of Docker.
 ** Prerequisites
 This flake is supported on the following platforms:
